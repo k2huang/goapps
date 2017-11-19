@@ -41,7 +41,7 @@ func main() {
 	}()
 	/*
 		wg.Add(1)
-		go func() { //小明
+		go func() { //小明 - 死锁
 			defer wg.Done()
 			fmt.Println("小明抢:", toyB)
 			lockB.Lock()
